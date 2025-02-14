@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: linear-gradient(to top, #010329, #000005);
+    --color-glass: linear-gradient(to left, #142544, #1a9092);
+    --color-water: linear-gradient(to left, #142544, #1b6d6e);
+}
+
+body {
+    background-color: #FFF5E4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure content starts from the top */
+    overflow: hidden;
+    color: #FF9494;
+    font-family: courier;
+}
+
+/* Thank You Text Styling */
+#thankyou {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Space from top */
+    z-index: 1000;
+    position: relative;
+    font-size: 50px;
+}
+
+/* GIF Container */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height for centering */
+    width: 100%;
+}
+
+/* GIF Styling */
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    /* Removed border-radius and box-shadow to remove the square around the gif */
+}
